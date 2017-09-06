@@ -7,7 +7,7 @@ class QueueManager(BaseManager):
 
 QueueManager.register('get_task_queue')
 QueueManager.register('get_result_queue')
-server_addr='127.0.0.1'
+server_addr='192.168.123.107'
 print('connect to server %s ...'%server_addr)
 m=QueueManager(address=(server_addr,5000),authkey='abc')
 m.connect()
